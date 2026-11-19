@@ -1,0 +1,139 @@
+{
+  "info": {
+    "_postman_id": "45ddc9c1-0212-4a65-a53e-a950f93c4ebf",
+    "name": "L3_AJS",
+    "description": "Лабораторная работа №3: Изучение протокола HTTP. Запросы к API JSONPlaceholder в Postman.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "1. Users (/users)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://jsonplaceholder.typicode.com/users",
+          "protocol": "https",
+          "host": [
+            "jsonplaceholder",
+            "typicode",
+            "com"
+          ],
+          "path": [
+            "users"
+          ]
+        },
+        "description": "Получение списка всех пользователей"
+      },
+      "response": []
+    },
+    {
+      "name": "2. Posts (/posts)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://jsonplaceholder.typicode.com/posts",
+          "protocol": "https",
+          "host": [
+            "jsonplaceholder",
+            "typicode",
+            "com"
+          ],
+          "path": [
+            "posts"
+          ]
+        },
+        "description": "Получение списка всех постов"
+      },
+      "response": []
+    },
+    {
+      "name": "3. Post by ID (/posts/25) [Group 1 + Journal 24]",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://jsonplaceholder.typicode.com/posts/25",
+          "protocol": "https",
+          "host": [
+            "jsonplaceholder",
+            "typicode",
+            "com"
+          ],
+          "path": [
+            "posts",
+            "25"
+          ]
+        },
+        "description": "Запрос поста по id = 1 + 24 = 25 (номер группы 1 + номер по журналу 24)"
+      },
+      "response": []
+    },
+    {
+      "name": "3 (альт). Post by ID (/posts/515) [Group 491 + Journal 24]",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://jsonplaceholder.typicode.com/posts/515",
+          "protocol": "https",
+          "host": [
+            "jsonplaceholder",
+            "typicode",
+            "com"
+          ],
+          "path": [
+            "posts",
+            "515"
+          ]
+        },
+        "description": "Запрос поста по id = 491 + 24 = 515 (возвращает 404, так как постов всего 100)"
+      },
+      "response": []
+    },
+    {
+      "name": "4. Comments (/comments)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://jsonplaceholder.typicode.com/comments",
+          "protocol": "https",
+          "host": [
+            "jsonplaceholder",
+            "typicode",
+            "com"
+          ],
+          "path": [
+            "comments"
+          ]
+        },
+        "description": "Получение списка всех комментариев"
+      },
+      "response": []
+    },
+    {
+      "name": "5. Comment by ID (/comments/24) [Journal 24]",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://jsonplaceholder.typicode.com/comments/24",
+          "protocol": "https",
+          "host": [
+            "jsonplaceholder",
+            "typicode",
+            "com"
+          ],
+          "path": [
+            "comments",
+            "24"
+          ]
+        },
+        "description": "Запрос комментария по id = 24 (номер в группе по журналу)"
+      },
+      "response": []
+    }
+  ]
+}
